@@ -10,16 +10,29 @@ function checkWinner() {
   if (playerSelection === computerSelection) {
     console.log("Draw");
   } else if (
+    (playerSelection === "paper" && computerSelection === "scissors") ||
     (playerSelection === "rock" && computerSelection === "paper") ||
     (playerSelection === "scissors" && computerSelection === "rock")
   ) {
-    console.log("Lose");
-  } else console.log("win");
-}
-function playRound(playerSelection, computerSelection) {
-  checkWinner();
-  console.log(playerSelection, computerSelection);
+    console.log(
+      `You lose, you choose ${playerSelection} and computer choose ${computerSelection}`
+    );
+  } else {
+    console.log(
+      `You win, you choose ${playerSelection} and computer choose ${computerSelection}`
+    );
+  }
 }
 let playerSelection = prompt("what is your choice ?");
 let computerSelection = getComputerChoice();
+
+function playRound(playerSelection, computerSelection) {
+  checkWinner();
+}
+
 playRound(playerSelection, computerSelection);
+
+function game() {
+  playRound();
+}
+game();
