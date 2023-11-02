@@ -1,34 +1,18 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: hsla(277, 79%, 84%, 1);
-
-  background: linear-gradient(
-    90deg,
-    hsla(277, 79%, 84%, 1) 0%,
-    hsla(204, 95%, 77%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(277, 79%, 84%, 1) 0%,
-    hsla(204, 95%, 77%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(277, 79%, 84%, 1) 0%,
-    hsla(204, 95%, 77%, 1) 100%
-  );
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#DDB4F6", endColorstr="#8DD0FC", GradientType=1 );
+.choiceBtn {
+  line-height: 30px;
+  width: 150px;
 }
-h1 {
-  letter-spacing: 4px;
-  color: #fff;
-  font-size: 48px;
-  font-weight: 600;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+#gameDiv {
+  font-family: cursive;
+  border: 3px solid;
+  border-radius: 25px;
+  padding: 10px;
+  background-color: lightgrey;
+  text-align: center;
+}
+#playerText {
+  color: blue;
+}
+#computerText {
+  color: red;
 }
